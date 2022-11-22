@@ -1,0 +1,1180 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <title>Promo</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!-- Material Kit CSS -->
+    <link href="css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
+    <!-- Styles -->
+    <link href="css/dashboard.css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="wrapper ">
+    <div class="sidebar" data-color="rose">
+        <div class="logo">
+            <a href="#" class="simple-text logo-mini">
+                <img class="img-logo" alt="logo" src="img/logo_cab_mini.png">
+            </a>
+            <a href="#" class="simple-text logo-normal">
+                <img class="img-logo" alt="logo" src="img/logo_cab.png">
+            </a>
+        </div>
+        <div class="sidebar-wrapper">
+            <div class="user">
+                <div class="photo">
+                    <i class="material-icons">account_circle</i>
+                </div>
+                <div class="user-info">
+                    <a data-toggle="collapse" href="#collapseUser" class="username">
+              <span>
+                Имя Фамилия
+                <b class="caret"></b>
+              </span>
+                    </a>
+                    <div class="collapse" id="collapseUser">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/profile.html">
+                                    <span class="sidebar-mini"></span>
+                                    <span class="sidebar-normal"> Настройки профиля </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/dashboard.html">
+                        <i class="material-icons">dashboard</i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/stats.html">
+                        <i class="material-icons">show_chart</i>
+                        <p>Статистика</p>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/offers.html">
+                        <i class="material-icons">local_offer</i>
+                        <p>Офферы</p>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/promo.html">
+                        <i class="material-icons">content_paste</i>
+                        <p>Промоматериалы</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#payments">
+                        <i class="material-icons">credit_card</i>
+                        <p>
+                            Платежи
+                            <b class="caret"></b>
+                        </p>
+                    </a>
+                    <div class="collapse" id="payments">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/payments.html">
+                                    <span class="sidebar-mini">
+                                        <i class="material-icons">record_voice_over</i>
+                                    </span>
+                                    <span class="sidebar-normal"> Запросить </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/payments-history.html">
+                                    <span class="sidebar-mini">
+                                        <i class="material-icons">history</i>
+                                    </span>
+                                    <span class="sidebar-normal"> История </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/faq_db.html">
+                        <i class="material-icons">question_answer</i>
+                        <p>FAQ</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/support.html">
+                        <i class="material-icons">headset_mic</i>
+                        <p>Саппорт</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-minimize">
+            <button id="minimizeSidebar" class="btn btn-just-icon btn-white btn-fab btn-round">
+                <i class="material-icons text_align-center visible-on-sidebar-regular">more_vert</i>
+                <i class="material-icons design_bullet-list-67 visible-on-sidebar-mini">view_list</i>
+            </button>
+        </div>
+    </div>
+    <div class="main-panel">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top" data-background-color="black">
+            <div class="navbar-form hidden"></div>
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon icon-bar"></span>
+                    <span class="navbar-toggler-icon icon-bar"></span>
+                    <span class="navbar-toggler-icon icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="http://example.com"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="/img/flags/US.png" alt="US">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">ru</a>
+                                <a class="dropdown-item" href="#">en</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">notifications</i>
+                                <span class="notification">4</span>
+                                <p class="d-lg-none d-md-block">
+                                    Notifications
+                                </p>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">You have 4 new tasks</a>
+                                <a class="dropdown-item" href="#">You're now friend with Andrew</a>
+                                <a class="dropdown-item" href="#">Another Notification</a>
+                                <a class="dropdown-item" href="#">Another One</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#pablo" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">person</i>
+                                <p class="d-lg-none d-md-block">
+                                    Account
+                                </p>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
+                                <span class="dropdown-item dropdown-item_disabled">Имя фамилия</span>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Выплаты</a>
+                                <a class="dropdown-item" href="#">Настройки</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Выйти</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-background"></div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header card-header-tabs card-header-rose">
+                                <div class="nav-tabs-navigation">
+                                    <div class="nav-tabs-wrapper">
+                                        <ul class="nav nav-tabs" data-tabs="tabs">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#semantic" data-toggle="tab">
+                                                    <span>Семантика</span>
+                                                    <div class="ripple-container"></div>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#banners" data-toggle="tab">
+                                                    <span>Баннера</span>
+                                                    <div class="ripple-container"></div>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#widgets" data-toggle="tab">
+                                                    <span>Виджеты</span>
+                                                    <div class="ripple-container"></div>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#templates" data-toggle="tab">
+                                                    <span>Шаблоны сайтов</span>
+                                                    <div class="ripple-container"></div>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#referal" data-toggle="tab">
+                                                    <span>Реферальная ссылка</span>
+                                                    <div class="ripple-container"></div>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#coupons" data-toggle="tab">
+                                                    <span>Купоны</span>
+                                                    <div class="ripple-container"></div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="semantic">
+                                        <div class="row">
+                                            <div class="col-lg-6 db-custom-dropdown">
+                                                <h4 class="rose">ГЕО</h4>
+                                                <select class="selectpicker" title="Выберите данные" data-actions-box="true" data-select-all-text="Выбрать все" data-deselect-all-text="Отменить" data-size="7" multiple>
+                                                    <option value="1">Essay US</option>
+                                                    <option value="2">Микрониши US</option>
+                                                    <option value="3">Essay UK</option>
+                                                    <option value="4">Микрониши UK</option>
+                                                    <option value="5">Essay CA</option>
+                                                    <option value="6">Essay Au</option>
+                                                    <option value="7">Китайские студенты</option>
+                                                    <option value="8">Немецкий трафик</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6 db-custom-dropdown">
+                                                <h4 class="rose">Виды работ</h4>
+                                                <select class="selectpicker" title="Выберите данные" data-actions-box="true" data-select-all-text="Выбрать все" data-deselect-all-text="Отменить" data-size="7" multiple>
+                                                    <option value="1">Essay</option>
+                                                    <option value="2">Paper</option>
+                                                    <option value="3">Coursework</option>
+                                                    <option value="4">Dissertation</option>
+                                                    <option value="5">Thesis</option>
+                                                    <option value="6">Research paper</option>
+                                                    <option value="7">Termapaper</option>
+                                                    <option value="8">Paraphrasing</option>
+                                                    <option value="9">Editing/proofreading</option>
+                                                    <option value="10">Resume</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 db-custom-dropdown">
+                                                <h4 class="rose">Допы</h4>
+                                                <select class="selectpicker" title="Выберите данные" data-actions-box="true" data-select-all-text="Выбрать все" data-deselect-all-text="Отменить" data-size="7" multiple>
+                                                    <option value="1">Дорвей</option>
+                                                    <option value="2">Cтоп слова</option>
+                                                    <option value="3">Low-season</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6 text-center btn_reg_keys">
+                                                <button type="button" id="new_key_data" name="new_key_data" class="btn btn-danger space-normal">Отправить запрос на получение ключей<div class="ripple-container"></div></button>
+                                            </div>
+                                        </div>
+                                        <div class="row semantic-foot text-center">
+                                            <div class="col">
+                                                <span>Для дополнительного комментария: skype: Edu-Money, icq: 675144772, e-mail: support@edu-money.com, telegram: @edu_money</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="banners">
+                                        <div class="card ">
+                                            <div class="card-header ">
+                                                <h4 class="card-title">Выбор оффера</h4>
+                                            </div>
+                                            <div class="card-body ">
+                                                <ul class="nav nav-pills nav-pills-warning banners-nav" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" data-toggle="tab" href="#link1" role="tablist">
+                                                            ExtraEssay
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-toggle="tab" href="#link2" role="tablist">
+                                                            FavorEssay
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-toggle="tab" href="#link3" role="tablist">
+                                                            GhostWriters
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-toggle="tab" href="#link4" role="tablist">
+                                                            EssayHelpHomeWork
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-toggle="tab" href="#link5" role="tablist">
+                                                            Undefined
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content tab-space banners">
+                                                    <div class="tab-pane active" id="link1">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ee_banner18.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ee_banner18.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ee_banner11.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ee_banner11.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ee_banner12.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ee_banner12.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ee_banner13.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ee_banner13.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ee_banner14.gif" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ee_banner14.gif"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ee_banner16.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ee_banner16.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ee_banner17.gif" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ee_banner17.gif"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ee_banner10.gif" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ee_banner10.gif"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane" id="link2">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ee_ban_new1.gif" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ee_ban_new1.gif"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ee_ban_boys2.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ee_ban_boys2.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ee_ban_new2.png" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ee_ban_new2.png"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/fe_banner1.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/fe_banner1.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/fe_banner2.gif" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/fe_banner2.gif"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/fe_banner3.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/fe_banner3.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/fe_banner4.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/fe_banner4.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane" id="link3">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ghostwritershilfe5.gif" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ghostwritershilfe5.gif"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ghostwritershilfe4.png" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ghostwritershilfe4.png"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ghostwritershilfe3.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ghostwritershilfe3.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ghostwritershilfe2.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ghostwritershilfe2.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ghostwritershilfe1.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ghostwritershilfe1.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/new_banner2.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/new_banner2.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane" id="link4">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ehh7.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ehh7.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ehh8.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ehh8.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/new_banner4.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/new_banner4.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ehh4.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ehh4.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ehh5.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ehh5.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ehh6.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ehh6.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/gif2_ehh.gif" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/gif2_ehh.gif"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/gif_ehh.gif" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/gif_ehh.gif"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ehh1.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ehh1.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ehh2.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ehh2.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/ehh3.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/ehh3.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane" id="link5">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/btn1_prw.png" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/btn1_prw.png"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/btn2_prw.png" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/btn2_prw.png"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/btn3_prw.png" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/btn3_prw.png"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="//edu-money.com/images/banner/imgpsh_fullsize.jpeg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                             <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/imgpsh_fullsize.jpeg"></a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/imgpsh_fullsize.jpeg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/banner-1.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                            <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/banner-1.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/banner-3.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                            <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/banner-3.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/buy-essay-button-1.png" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/buy-essay-button-1.png"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/buy-essay-button-2.png" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/buy-essay-button-2.png"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/order-button-2.png" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/order-button-2.png"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/new_banner1.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/new_banner1.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/new_banner3.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/new_banner3.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/new_banner6.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/new_banner6.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/new_banner7.png" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/new_banner7.png"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/new_banner8.png" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/new_banner8.png"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="banner">
+                                                                    <img class="banner-img" src="img/new_banner5.jpg" alt="banner">
+                                                                    <textarea class="textarea textarea-banner" readonly><!-- Start Edu-Money banner -->
+                                                                        <a href="https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0"> <img src="//edu-money.com/images/banner/new_banner5.jpg"></a>
+                                                                        <!-- End Edu-Money banner --></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="widgets">
+                                        <h2 class="text-center-md">Калькулятор</h2>
+                                        <div class="row">
+                                            <div class="col-md-4 flex-column-center">
+                                                <h4 class="calculator-title text-center">Calculator</h4>
+                                                <iframe width="250" height="320" class="iframe-calculator" src="//edu-money.com/files/widgets/calculator-ess.html?em_promo_url=http%3A%2F%2Fextraessay.com%2Forder%3Fkey_wpg%3Db8a17bc8ba1fd9bf0d8f7f5cae7265f0" frameborder="0" scrolling="no" seamless="seamless"></iframe>
+                                            </div>
+                                            <div class="col-md-8 text-center">
+                                                <h4>Code HTML</h4>
+                                                <textarea class="textarea textarea-code" readonly><!-- Start Edu-Money widget -->
+
+                                                    <script src="//edu-money.com/shared/js/emWidget.js"></script>
+
+                                                    <script>emWidget('//edu-money.com/files/widgets/calculator-ess.html', 'https://extraessay.com?key_wpg=b8a17bc8ba1fd9bf0d8f7f5cae7265f0', 250, 300);</script>
+
+                                                    <!-- End Edu-Money widget --></textarea>
+                                            </div>
+                                        </div>
+                                        <h2 class="text-center-md">Форма заказа</h2>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <span class="rose">Введите ваш сайт:</span>
+                                                <div class="form-group">
+                                                    <label class="control-label is-empty bmd-label-floating">Сайт</label>
+                                                    <input type="password" class="form-control enter-url" placeholder="example.com">
+                                                    <span class="material-input"></span>
+                                                </div>
+                                                <button type="submit" class="btn btn-success pull-right">Сгенерировать форму</button>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <span class="rose">Как это работает:</span><br>
+                                                <span>Введите URL сайта, на котором вы хотите разместить ордер форму.<br>
+                                                    (Внимание: URL сайта без http и www пример: example.com)<br>
+                                                    Нажмите кнопку Generate Data и вставьте на нужной странице сайта полученный код ордер формы.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row form-generate generated">
+                                                <div class="col-md-8 offset-md-4">
+                                                    <textarea class="textarea textarea-code" readonly><!-- Start Edu-Money Order Form -->
+
+                                                        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><script src="http://client-space.net/partner-form/form1/js/custom-partner-form.js"></script><script> $(function(){site_partner ="test"; key_wpg="b8a17bc8ba1fd9bf0d8f7f5cae7265f0";});</script><div id="order_form_58bd8424c71eb78t"></div>
+
+                                                        <!-- End Edu-Money Order Form --></textarea>
+                                                    <div class="ex-login-form">
+                                                        <span>Для кнопки входа в кабинет клиента с сайта <strong><span id="ex_site">Тест</span></strong> используйте ссылку: <strong><span id="url_login_site">http://client-space.net/тест/login</span></strong></span>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="templates">
+                                        <div class="card">
+                                            <div class="card-header card-header-text">
+                                                <div class="card-text purple">
+                                                    <h4 class="card-title">Лендинг-страница главной ExtraEssay</h4>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6 flex-column-center justify-content-center">
+                                                        <img src="img/ee_big.jpg" class="template-img" alt="template">
+                                                        <a href="/files/wp-themes/extraessay_v4.zip" class="btn btn-warning">Скачать WP тему »</a>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h4 class="text-center rose">Инструкция</h4>
+                                                        <ol class="template-instruction">
+                                                            <li>Скачиваете архив с WordPress-темой.</li>
+                                                            <li>На вашем WP-сайте заходим в раздел:
+                                                                "Темы" - Добавить новую - Загрузить новую.</li>
+                                                            <li>Заливаем скачанный вами файл "extraessay_wp_theme".
+                                                                Нажимаем "Установить".</li>
+                                                            <li>Активируем данную тему на вашем сайте.</li>
+                                                            <li>Переходим в раздел "Внешний Вид" - Редактор.</li>
+                                                            <li>Переходим в заголовок (header.php).</li>
+                                                            <li>Находим в коде следующее:<br>
+                                                                <i>&lt;script type=&#39;text/javascript&#39;&gt;<br/>                                                                /*<br/>                                                                    * WGWP_KEY Your Key<br/>                                                                    */<br/>                                                                    var WGWP_KEY = &#39;Your Key&#39;;<br/>                                                                &lt;/script&gt;<br></i>
+
+                                                                В строку <strong>var WGWP_KEY = 'Your Key';</strong> вставляем ваш ключ веб-мастера между ковычек ' '.<br>
+                                                                Ваш ключ будет приведён ниже:<br>
+                                                                    var WGWP_KEY = 'b8a17bc8ba1fd9bf0d8f7f5cae7265f0';<br>
+                                                            </li>
+                                                            <li>Вуаля! WP-тема работает исправно.</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header card-header-text">
+                                                <div class="card-text purple">
+                                                    <h4 class="card-title">FavorEssay WordPress landing page</h4>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6 flex-column-center justify-content-center">
+                                                        <img src="img/favoressay_small.jpg" class="template-img" alt="template">
+                                                        <a href="/files/wp-themes/favoressay_v4.zip" class="btn btn-warning">Скачать WP тему »</a>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h4 class="text-center rose">Инструкция</h4>
+                                                        <ol class="template-instruction">
+                                                            <li>Скачиваете архив с WordPress-темой.</li>
+                                                            <li>На вашем WP-сайте заходим в раздел:
+                                                                "Темы" - Добавить новую - Загрузить новую.</li>
+                                                            <li>Заливаем скачанный вами файл "extraessay_wp_theme".
+                                                                Нажимаем "Установить".</li>
+                                                            <li>Активируем данную тему на вашем сайте.</li>
+                                                            <li>Переходим в раздел "Внешний Вид" - Редактор.</li>
+                                                            <li>Переходим в заголовок (header.php).</li>
+                                                            <li>Находим в коде следующее:<br>
+                                                                <i>&lt;script type=&#39;text/javascript&#39;&gt;<br/>                                                                /*<br/>                                                                    * WGWP_KEY Your Key<br/>                                                                    */<br/>                                                                    var WGWP_KEY = &#39;Your Key&#39;;<br/>                                                                &lt;/script&gt;<br></i>
+
+                                                                В строку <strong>var WGWP_KEY = 'Your Key';</strong> вставляем ваш ключ веб-мастера между ковычек ' '.<br>
+                                                                Ваш ключ будет приведён ниже:<br>
+                                                                var WGWP_KEY = 'b8a17bc8ba1fd9bf0d8f7f5cae7265f0';<br>
+                                                            </li>
+                                                            <li>Вуаля! WP-тема работает исправно.</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header card-header-text">
+                                                <div class="card-text purple">
+                                                    <h4 class="card-title">White-Label WP шаблон</h4>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6 flex-column-center justify-content-center">
+                                                        <img src="img/wpl_full.png" class="template-img" alt="template">
+                                                        <a href="/files/wp-themes/wpland_full_v1.1.zip" class="btn btn-warning space-normal">Скачать White-Label шаблон »</a>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h4 class="text-center rose">Инструкция</h4>
+                                                        <span>Файл с инструкцией по установке лежит в архиве темы в папке readme.<br>
+                                                        Не забудьте вставить ваш ключ в необходимый раздел.<br>
+                                                        Ваш ключ: b8a17bc8ba1fd9bf0d8f7f5cae7265f0</span><br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="referal">
+                                        <div class="row">
+                                            <div class="col-md-3 flex-column-center align-items-start">
+                                                <span>Ваша Ссылка:</span>
+                                                <a href="https://edu-money.com/?partner=373" target="_blank" class="referal-link">https://edu-money.com/?partner=373</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <span>Поделитесь этой ссылкой с веб-мастером, который заинтересован в работе с нашей компанией/рынком.<br>
+                                                Вы будете получать 5% комиссии с каждого заказа, пришедшего по его каналу.</span>
+                                            </div>
+                                            <div class="col-md-3 flex-column-center">
+                                                <button type="button" id="copy_referal_link" class="btn btn-rose pull-right">Скопировать</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="coupons">
+                                        <div class="row">
+                                            <div class="col-md-3 db-custom-dropdown">
+                                                <h4 class="rose">Cрок действия</h4>
+                                                <select class="selectpicker" title="Выберите данные" data-size="7">
+                                                    <option value="1">1 месяц</option>
+                                                    <option value="2">3 месяца</option>
+                                                    <option value="3">6 месяцев</option>
+                                                    <option value="4">12 месяцев</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-3 db-custom-dropdown">
+                                                <h4 class="rose">Размер скидки </h4>
+                                                <select class="selectpicker" title="Выберите данные" data-size="7">
+                                                    <option value="1">1%</option>
+                                                    <option value="2">2%</option>
+                                                    <option value="3">3%</option>
+                                                    <option value="4">4%</option>
+                                                    <option value="5">5%</option>
+                                                    <option value="6">6%</option>
+                                                    <option value="7">7%</option>
+                                                    <option value="8">8%</option>
+                                                    <option value="9">9%</option>
+                                                    <option value="10">10%</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-3 db-custom-dropdown">
+                                                <h4 class="rose">Выбор офферов</h4>
+                                                <select class="selectpicker" title="Выберите данные" data-size="7">
+                                                    <option value="1">ExtraEssay</option>
+                                                    <option value="2">FavorEssay</option>
+                                                    <option value="3">GhostWriters</option>
+                                                    <option value="4">EssayHelpHomeWork</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-3 align-items-end">
+                                                <h4 class="rose no-view hide-sm">Генерировать</h4>
+                                                <button type="button" class="btn purple w-100">Генерировать<div class="ripple-container"></div></button>
+                                            </div>
+                                        </div>
+                                        <div class="row form-generate generated">
+                                            <div class="col-md-6">
+                                                <div class="form-group label-floating is-empty">
+                                                    <input type="text" class="form-control" id="promocode" value="1ps2s" maxlength="5" readonly>
+                                                    <span class="material-input"></span>
+                                                </div>
+                                                <span class="promocode-text">Промокод действует на любой оффер</span>
+                                                <button type="button" id="copy_promocode"  class="btn btn-warning pull-right">Скопировать<div class="ripple-container"></div></button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group is-empty">
+                                                    <input type="text" class="form-control" id="partner_key_promocode" value="https://edu-money.com/?partner=1ps2s" readonly>
+                                                    <span class="material-input"></span>
+                                                </div>
+                                                <button id="copy_partner_key_promocode" type="button" class="btn btn-warning pull-right">Скопировать<div class="ripple-container"></div></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav class="float-left">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                FAQ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Policies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Terms of Use
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="copyright float-right">
+                    &copy;
+                    Edu-Money
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<!--   Core JS Files   -->
+<script src="js/core/jquery.min.js"></script>
+<script src="js/core/popper.min.js"></script>
+<script src="js/core/bootstrap-material-design.min.js"></script>
+<script src="js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+<!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+<script src="../js/plugins/bootstrap-selectpicker.js"></script>
+<!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="js/material-dashboard.js?v=2.1.0" type="text/javascript"></script>
+<!-- Sweet Alert 2 plugin, full documentation here: https://limonte.github.io/sweetalert2/ -->
+<script src="js/plugins/sweetalert2.js"></script>
+<script>
+    $(document).ready(function() {
+        $().ready(function() {
+            $sidebar = $('.sidebar');
+
+            $sidebar_img_container = $sidebar.find('.sidebar-background');
+
+            $full_page = $('.full-page');
+
+            $sidebar_responsive = $('body > .navbar-collapse');
+
+            window_width = $(window).width();
+
+            fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
+
+            if (window_width > 767 && fixed_plugin_open == 'Dashboard') {
+                if ($('.fixed-plugin .dropdown').hasClass('show-dropdown')) {
+                    $('.fixed-plugin .dropdown').addClass('open');
+                }
+
+            }
+
+            $('.fixed-plugin a').click(function(event) {
+                // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
+                if ($(this).hasClass('switch-trigger')) {
+                    if (event.stopPropagation) {
+                        event.stopPropagation();
+                    } else if (window.event) {
+                        window.event.cancelBubble = true;
+                    }
+                }
+            });
+
+            $('.fixed-plugin .active-color span').click(function() {
+                $full_page_background = $('.full-page-background');
+
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+
+                var new_color = $(this).data('color');
+
+                if ($sidebar.length != 0) {
+                    $sidebar.attr('data-color', new_color);
+                }
+
+                if ($full_page.length != 0) {
+                    $full_page.attr('filter-color', new_color);
+                }
+
+                if ($sidebar_responsive.length != 0) {
+                    $sidebar_responsive.attr('data-color', new_color);
+                }
+            });
+
+            $('.fixed-plugin .background-color .badge').click(function() {
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+
+                var new_color = $(this).data('background-color');
+
+                if ($sidebar.length != 0) {
+                    $sidebar.attr('data-background-color', new_color);
+                }
+            });
+
+            $('.fixed-plugin .img-holder').click(function() {
+                $full_page_background = $('.full-page-background');
+
+                $(this).parent('li').siblings().removeClass('active');
+                $(this).parent('li').addClass('active');
+
+
+                var new_image = $(this).find("img").attr('src');
+
+                if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
+                    $sidebar_img_container.fadeOut('fast', function() {
+                        $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+                        $sidebar_img_container.fadeIn('fast');
+                    });
+                }
+
+                if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
+                    var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+
+                    $full_page_background.fadeOut('fast', function() {
+                        $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+                        $full_page_background.fadeIn('fast');
+                    });
+                }
+
+                if ($('.switch-sidebar-image input:checked').length == 0) {
+                    var new_image = $('.fixed-plugin li.active .img-holder').find("img").attr('src');
+                    var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+
+                    $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+                    $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+                }
+
+                if ($sidebar_responsive.length != 0) {
+                    $sidebar_responsive.css('background-image', 'url("' + new_image + '")');
+                }
+            });
+
+            $('.switch-sidebar-image input').change(function() {
+                $full_page_background = $('.full-page-background');
+
+                $input = $(this);
+
+                if ($input.is(':checked')) {
+                    if ($sidebar_img_container.length != 0) {
+                        $sidebar_img_container.fadeIn('fast');
+                        $sidebar.attr('data-image', '#');
+                    }
+
+                    if ($full_page_background.length != 0) {
+                        $full_page_background.fadeIn('fast');
+                        $full_page.attr('data-image', '#');
+                    }
+
+                    background_image = true;
+                } else {
+                    if ($sidebar_img_container.length != 0) {
+                        $sidebar.removeAttr('data-image');
+                        $sidebar_img_container.fadeOut('fast');
+                    }
+
+                    if ($full_page_background.length != 0) {
+                        $full_page.removeAttr('data-image', '#');
+                        $full_page_background.fadeOut('fast');
+                    }
+
+                    background_image = false;
+                }
+            });
+
+            $('.switch-sidebar-mini input').change(function() {
+                $body = $('body');
+
+                $input = $(this);
+
+                if (md.misc.sidebar_mini_active == true) {
+                    $('body').removeClass('sidebar-mini');
+                    md.misc.sidebar_mini_active = false;
+
+                    $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
+
+                } else {
+
+                    $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
+
+                    setTimeout(function() {
+                        $('body').addClass('sidebar-mini');
+
+                        md.misc.sidebar_mini_active = true;
+                    }, 300);
+                }
+
+                // we simulate the window Resize so the charts will get updated in realtime.
+                var simulateWindowResize = setInterval(function() {
+                    window.dispatchEvent(new Event('resize'));
+                }, 180);
+
+                // we stop the simulation of Window Resize after the animations are completed
+                setTimeout(function() {
+                    clearInterval(simulateWindowResize);
+                }, 1000);
+
+            });
+        });
+    });
+</script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
